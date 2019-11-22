@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"needhelp\startup_stm32f407xx.o"
+"needhelp\main.o"
+"needhelp\stm32f4xx_it.o"
+"needhelp\stm32f4xx_hal_msp.o"
+"needhelp\stm32f4xx_hal_tim.o"
+"needhelp\stm32f4xx_hal_tim_ex.o"
+"needhelp\stm32f4xx_hal_uart.o"
+"needhelp\stm32f4xx_hal_rcc.o"
+"needhelp\stm32f4xx_hal_rcc_ex.o"
+"needhelp\stm32f4xx_hal_flash.o"
+"needhelp\stm32f4xx_hal_flash_ex.o"
+"needhelp\stm32f4xx_hal_flash_ramfunc.o"
+"needhelp\stm32f4xx_hal_gpio.o"
+"needhelp\stm32f4xx_hal_dma_ex.o"
+"needhelp\stm32f4xx_hal_dma.o"
+"needhelp\stm32f4xx_hal_pwr.o"
+"needhelp\stm32f4xx_hal_pwr_ex.o"
+"needhelp\stm32f4xx_hal_cortex.o"
+"needhelp\stm32f4xx_hal.o"
+"needhelp\stm32f4xx_hal_exti.o"
+"needhelp\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "needHelp\needHelp.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "needHelp.map" -o needHelp\needHelp.axf
